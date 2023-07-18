@@ -106,6 +106,10 @@ body {
 }
 
 /* Banner Section */
+.banner-main {
+    background: url("./images/Group 14.png");
+    background-repeat: no-repeat;
+}
 .banner-heading {
     color: #0b0223;
     font-size: 3rem;
@@ -152,10 +156,6 @@ body {
     justify-content: space-between;
     align-items: center;
 }
-.banner-main {
-    background: url("./images/Group 14.png");
-    background-repeat: no-repeat;
-}
 
 /* Second Banner Section */
 .second-banner-main {
@@ -193,11 +193,133 @@ body {
     font-weight: 700;
 }
 /* Responsive Design */
-
+/* ************Banner Section********** */
 /* Mobile Devices */
 @media screen and (max-width: 576px) {
+    .nav-container,
+    .link-container ul,
+    .link-container,
+    .banner-container {
+        flex-direction: column;
+    }
+    .banner-container img {
+        width: 100%;
+    }
+    .nav-title,
+    .icon-container,
+    .nav-link {
+        margin-bottom: 2.3rem;
+    }
+    .banner-content {
+        order: 2;
+    }
+    .banner-img {
+        background: #fff;
+        padding-bottom: 2rem;
+    }
+    .banner-main {
+        margin: 0 1.5rem;
+    }
+    .secondary-btn,
+    .btn-primary {
+        font-size: 1rem;
+    }
+    .banner-heading {
+        font-size: 2rem;
+    }
+    .large-text {
+        font-size: 4rem;
+    }
+    #play-icon {
+        font-size: 1rem;
+    }
+    #download-icon {
+        font-size: 1rem;
+    }
+    #group-icon {
+        font-size: 1rem;
+    }
+
+    .second-banner-main {
+        margin-top: 3rem;
+        background: #fff;
+    }
+    .second-banner-info {
+        text-align: center;
+    }
+    .second-banner-info h1 {
+        text-align: center;
+    }
+    .second-banner-info p {
+        text-align: center;
+    }
+    .second-banner-btn {
+        justify-content: center;
+        font-size: 1rem;
+    }
 }
 
 /* tablet or medium Devices */
 @media screen and (min-width: 576px) and (max-width: 992px) {
+    .nav-container,
+    .link-container ul,
+    .link-container {
+        flex-direction: column;
+        gap: 0;
+    }
+    .nav-title,
+    .icon-container,
+    .nav-link {
+        margin-bottom: 2.3rem;
+    }
+    .banner-content,
+    .banner-container,
+    .second-banner-info,
+    .banner-container img {
+        width: 100%;
+    }
+
+    .banner-main,
+    .second-banner-main {
+        padding: 1.5rem 2rem;
+    }
+    .secondary-btn,
+    .btn-primary {
+        font-size: 1rem;
+        padding: 10px 30px;
+    }
+    .banner-heading {
+        font-size: 2rem;
+    }
+    .large-text {
+        font-size: 4rem;
+    }
+    #play-icon {
+        font-size: 1rem;
+    }
+    #download-icon {
+        font-size: 1rem;
+    }
+    #group-icon {
+        font-size: 1rem;
+    }
+
+    .second-banner-main {
+        padding-top: 3rem;
+    }
+    .second-banner-info {
+        text-align: center;
+    }
+    .second-banner-info h1 {
+        font-size: 2.5rem;
+    }
+    .second-banner-info p {
+        font-size: 1rem;
+    }
+    .second-banner-btn {
+        font-size: 0.8rem;
+    }
+    .footer-text span {
+        font-size: 1.1rem;
+    }
 }
