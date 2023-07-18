@@ -216,8 +216,7 @@ body {
         background-position: center;
     }
     .banner-content {
-        padding-top: 1rem;
-        padding-bottom: 4rem;
+        padding: 1.1rem 1rem 4rem 1rem;
         order: 2;
     }
     .banner-img {
@@ -429,9 +428,16 @@ main {
         margin-top: 2.5rem;
         padding: 0 2rem;
         grid-template-columns: repeat(2, 1fr);
+        gap: 1.5rem;
+    }
+    .games-heading {
+        font-size: 2rem;
+    }
+    .games-description {
+        font-size: 0.9rem;
     }
     .card-text {
-        font-size: 1rem;
+        font-size: 0.8rem;
         text-align: center;
     }
 }
