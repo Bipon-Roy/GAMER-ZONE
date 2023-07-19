@@ -491,7 +491,7 @@ main {
         width: 100%;
     }
     .play-description {
-        width: fit-content;
+        width: 100%;
         color: #534c64;
         font-size: 0.9rem;
     }
@@ -506,13 +506,14 @@ main {
     .resize-img {
         justify-content: flex-start;
         position: relative;
-        bottom: 8.8rem;
+        bottom: 7.5rem;
         left: 1.2rem;
-        width: 350px;
+        width: 300px;
     }
     .play-main {
         flex-direction: column;
         justify-content: flex-start;
+        margin-left: 0;
     }
 }
 @media screen and (min-width: 576px) and (max-width: 992px) {
@@ -523,23 +524,23 @@ main {
         width: 90%;
     }
     .resize-img img {
-        width: 18%;
+        width: 30%;
     }
     .play-title {
         font-size: 2rem;
     }
     .play-description {
-        width: 300px;
+        width: 250px;
         font-size: 0.9rem;
     }
     .play-main {
-        padding: 0 1rem;
-        gap: 3rem;
+        gap: 4rem;
         margin-left: 0;
     }
     .resize-img {
-        bottom: 7.5rem;
-        left: 1rem;
+        width: 480px;
+        bottom: 8rem;
+        left: 7rem;
     }
 }
 
