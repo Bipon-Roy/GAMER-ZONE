@@ -216,7 +216,7 @@ body {
         background-position: center;
     }
     .banner-content {
-        padding: 1.1rem 1rem 4rem 1rem;
+        padding: 1.1rem 0.2rem 4rem 1rem;
         order: 2;
     }
     .banner-img {
@@ -333,6 +333,7 @@ main {
     max-width: 1340px;
     margin: 0 auto;
 }
+
 /* Online Games Section */
 .games-container {
     margin-top: 4rem;
@@ -439,5 +440,94 @@ main {
     .card-text {
         font-size: 0.8rem;
         text-align: center;
+    }
+}
+
+/* Gameplay Section  */
+.play-container-main {
+    height: 800px;
+}
+.play-main {
+    margin-top: 6rem;
+    padding: 0 1rem;
+    display: flex;
+    gap: 1.5rem;
+    justify-content: space-between;
+    align-items: center;
+}
+.play-title {
+    color: #0b0223;
+    text-align: right;
+    font-size: 3rem;
+    font-weight: 700;
+    margin-bottom: 1.5rem;
+}
+.play-description {
+    width: 400px;
+    color: #534c64;
+    text-align: right;
+    font-size: 1.1rem;
+}
+.resize-img {
+    display: flex;
+    justify-content: center;
+    position: relative;
+    bottom: 18rem;
+}
+@media screen and (max-width: 576px) {
+    .play-container-main {
+        height: auto;
+    }
+    .play-title,
+    .play-description {
+        text-align: center;
+    }
+    .play-title {
+        font-size: 2.1rem;
+    }
+    .play-img img {
+        width: 100%;
+    }
+    .play-img {
+        padding-left: 4rem;
+        padding-right: 1rem;
+    }
+    .resize-img img {
+        width: 35%;
+    }
+    .resize-img {
+        justify-content: flex-start;
+        position: relative;
+        bottom: 8.5rem;
+        left: 3rem;
+    }
+    .play-main {
+        flex-direction: column;
+    }
+}
+@media screen and (min-width: 576px) and (max-width: 992px) {
+    .play-container-main {
+        height: auto;
+    }
+    .play-img img {
+        width: 90%;
+    }
+    .resize-img img {
+        width: 18%;
+    }
+    .play-title {
+        font-size: 2rem;
+    }
+    .play-description {
+        width: 300px;
+        font-size: 0.9rem;
+    }
+    .play-main {
+        padding: 0 2rem;
+        gap: 3rem;
+    }
+    .resize-img {
+        bottom: 7.5rem;
+        left: 2rem;
     }
 }
