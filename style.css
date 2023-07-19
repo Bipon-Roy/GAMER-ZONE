@@ -262,6 +262,7 @@ body {
     .second-banner-btn {
         justify-content: center;
         font-size: 1rem;
+        margin-bottom: 4rem;
     }
 }
 
@@ -500,14 +501,14 @@ main {
         padding-right: 1rem;
     }
     .resize-img img {
-        width: 43%;
+        width: 50%;
     }
 
     .resize-img {
         justify-content: flex-start;
         position: relative;
-        bottom: 7.5rem;
-        left: 1.2rem;
+        bottom: 8.5rem;
+        left: 0.5rem;
         width: 300px;
     }
     .play-main {
