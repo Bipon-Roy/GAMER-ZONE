@@ -491,8 +491,9 @@ main {
         width: 100%;
     }
     .play-description {
-        width: 350px;
-        font-size: 1rem;
+        width: fit-content;
+        color: #534c64;
+        font-size: 0.9rem;
     }
     .play-img {
         padding-left: 4rem;
@@ -653,11 +654,12 @@ main {
     font-size: 1rem;
     font-weight: 600;
 }
-.footer-icon {
-    font-size: 1.8rem;
+.footer-icon-container a {
+    font-size: 2.2rem;
     color: #fff;
     margin-right: 1.6rem;
 }
+
 .footer-icon-container {
     padding-top: 2.5rem;
     padding-bottom: 1rem;
@@ -675,4 +677,53 @@ main {
 .footer-description {
     font-size: 1rem;
     padding-top: 1.5rem;
+}
+@media screen and (max-width: 576px) {
+    .footer-title {
+        gap: 1rem;
+    }
+    .footer-heading {
+        font-size: 2rem;
+    }
+    .footer-title img {
+        width: 65px;
+    }
+    .footer-link-container ul {
+        flex-wrap: wrap;
+        gap: 1.2rem;
+    }
+    .footer-link-container a {
+        margin-right: 1.6rem;
+    }
+    .footer-icon-container {
+        display: grid;
+        gap: 1.5rem;
+        grid-template-columns: repeat(3, 1fr);
+    }
+    .footer-icon-container > span > a {
+        font-size: 1.6rem;
+    }
+    .footer-text > ul {
+        justify-content: space-between;
+        padding: 1.5rem 0.5rem 1.5rem 1rem;
+        margin: 0 auto;
+    }
+    .footer-description {
+        padding-left: 4.2rem;
+        padding-right: 4.2rem;
+    }
+}
+@media screen and (min-width: 576px) and (max-width: 992px) {
+    .footer-title {
+        gap: 1rem;
+    }
+    .footer-heading {
+        font-size: 2rem;
+    }
+    .footer-link-container ul {
+        gap: 1rem;
+    }
+    .footer-link-container a {
+        margin-right: 1.2rem;
+    }
 }
