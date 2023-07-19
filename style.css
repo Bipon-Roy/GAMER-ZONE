@@ -216,7 +216,7 @@ body {
         background-position: center;
     }
     .banner-content {
-        padding: 1.1rem 0.2rem 4rem 1rem;
+        padding-left: 5px;
         order: 2;
     }
     .banner-img {
@@ -228,7 +228,7 @@ body {
     }
     .secondary-btn,
     .btn-primary {
-        font-size: 1rem;
+        font-size: 0.8rem;
     }
     .banner-heading {
         font-size: 2rem;
@@ -488,21 +488,28 @@ main {
     .play-img img {
         width: 100%;
     }
+    .play-description {
+        width: 350px;
+        font-size: 1rem;
+    }
     .play-img {
         padding-left: 4rem;
         padding-right: 1rem;
     }
     .resize-img img {
-        width: 35%;
+        width: 43%;
     }
+
     .resize-img {
         justify-content: flex-start;
         position: relative;
-        bottom: 8.5rem;
-        left: 3rem;
+        bottom: 8.8rem;
+        left: 1.2rem;
+        width: 350px;
     }
     .play-main {
         flex-direction: column;
+        justify-content: flex-start;
     }
 }
 @media screen and (min-width: 576px) and (max-width: 992px) {
@@ -523,11 +530,11 @@ main {
         font-size: 0.9rem;
     }
     .play-main {
-        padding: 0 2rem;
+        padding: 0 1rem;
         gap: 3rem;
     }
     .resize-img {
         bottom: 7.5rem;
-        left: 2rem;
+        left: 1rem;
     }
 }
